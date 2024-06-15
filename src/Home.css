@@ -1,0 +1,109 @@
+/* Define estilos gerais para o componente Home */
+.Home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+  font-family: Arial, sans-serif;
+}
+
+/* Define o estilo da caixa principal */
+.box {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 350px;
+}
+
+/* Estilos para a área de transição */
+.transition-area {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Estilos para os elementos de input e select */
+input[type='number'],
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+/* Estilos para o valor de resultado */
+p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+/* Estilos para as opções de moeda */
+.option-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+select {
+  display: inline-block;
+  width: calc(100% - 40px);
+  padding: 8px;
+  margin-left: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+select:hover {
+  background-color: #f0f0f0;
+}
+
+select option {
+  padding: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.from select,
+.to select {
+  width: calc(100% - 20px);
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+  color: #666;
+}
+
+.icon.usd {
+  color: #007bff;
+}
+
+.icon.eur {
+  color: #28a745;
+}
+
+.icon.gbp {
+  color: #dc3545;
+}
+
+.icon.btc {
+  color: #ffc107;
+}
+
+.icon.eth {
+  color: #17a2b8;
+}
